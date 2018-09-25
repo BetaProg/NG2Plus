@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CountitService } from './countit.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,10 @@ import { CountitService } from './countit.service';
 })
 export class AppComponent {
   title = 'Ripoff';
+  private router: Router;
+  constructor(router: Router){
+	   this.router = router;
+	  console.log(router.url);
+  }
 }
 

@@ -21,3 +21,7 @@
 	color:#fff;
 	width:100%;
 }
+#cstm-float-btn{
+	position:absolute;
+	bottom:10px;
+}
